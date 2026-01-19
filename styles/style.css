@@ -1,356 +1,358 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+*, 
+*::before, 
+*::after { 
+  box-sizing: border-box; 
+} 
 
-html {
-  block-size: 100%;
-}
+html { 
+  block-size: 100%; 
+} 
 
-.page {
-  inline-size: 1200px;
-  block-size: 100%;
-  margin: auto;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
+.page { 
+  inline-size: 1200px; 
+  block-size: 100%; 
+  margin: auto; 
+  color: #fff; 
+  font-family: 'Fira Sans Condensed', sans-serif; 
+  font-size: 18px; 
+  background-color: #1b1919; 
   display: flex;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-/* Скрытие элементов для доступности */
-.visually-hidden {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
-/* Кастомный скроллбар */
-.content__list::-webkit-scrollbar {
-  width: 4px;
-}
-
-.content__list::-webkit-scrollbar-track {
-  background: rgb(217 217 217 / 10%);
-}
-
-.content__list::-webkit-scrollbar-thumb {
-  background-color: #d9d9d9;
-}
-
-/* Основная раскладка */
-
-.content {
-  display: flex;
-  align-items: flex-end;
-  gap: 30px;
-  inline-size: 1140px;
-  margin: auto;
-  padding-block-start: 133px;
-  padding-inline-start: 30px;
-}
-
-.result {
-  inline-size: 711px;
-}
-
-.content__details {
-  inline-size: 399px;
-  block-size: 534px;
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-}
-
-.search-form {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 40px;
-}
-
-/* Видео и контент слева */
-
-.result__video-container {
-  position: relative;
-  inline-size: 711px;
-  block-size: 386px;
-  margin-block-end: 16px;
-}
-
-.result__video {
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* Форма поиска - поля ввода */
-
-.search-form__fieldset {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  border: none;
-}
-
-.search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.search-form__label {
-  display: inline-flex;
+  justify-content: center;
   align-items: center;
-  gap: 5px;
-  cursor: pointer;
-  width: fit-content;
-}
+} 
 
-.search-form__textfield {
-  inline-size: 225px;
-  block-size: 27px;
-  background-color: transparent;
-  border: none;
-  border-block-start: 1px solid #fff;
-  border-block-end: 1px solid #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
+h1, 
+h2, 
+h3, 
+h4, 
+p, 
+ul, 
+ol, 
+li, 
+blockquote, 
+fieldset { 
+  margin: 0; 
+  padding: 0; 
+} 
+
+ul, 
+ol { 
+  list-style: none; 
+} 
+
+/* Скрытие элементов для доступности */ 
+.visually-hidden { 
+  position: absolute; 
+  inline-size: 1px; 
+  block-size: 1px; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%); 
+  white-space: nowrap; 
+} 
+
+/* Кастомный скроллбар */ 
+.content__list::-webkit-scrollbar { 
+  width: 4px; 
+} 
+
+.content__list::-webkit-scrollbar-track { 
+  background: rgb(217 217 217 / 10%); 
+} 
+
+.content__list::-webkit-scrollbar-thumb { 
+  background-color: #d9d9d9; 
+} 
+
+/* Основная раскладка */ 
+
+.content { 
+  display: flex; 
+  align-items: flex-end; 
+  gap: 30px; 
+  inline-size: 1140px; 
+  margin: auto; 
+  padding-block-start: 10px;
+  padding-inline-start: 10px;
+} 
+
+.result { 
+  inline-size: 711px; 
+} 
+
+/* Видео и контент слева */ 
+
+.result__video-container { 
+  position: relative; 
+  inline-size: 711px; 
+  block-size: 386px; 
+  margin-block-end: 16px; 
+} 
+
+.result__video { 
+  inline-size: 100%; 
+  block-size: 100%; 
+  object-fit: cover; 
+  object-position: center; 
+} 
+
+.content__details { 
+  inline-size: 399px; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 26px; 
+} 
+
+/* Заголовок справа */ 
+
+.title { 
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Oswald', sans-serif; 
+  font-weight: 700; 
+  font-size: 75px; 
+  line-height: 94%; 
+  text-transform: uppercase; 
+  color: #fff; 
+} 
+
+.content__accent { 
+  color: #545050; 
+} 
+
+/* Форма поиска */ 
+
+.search-form { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-end; 
+  gap: 40px; 
+} 
+
+/* Форма поиска - поля ввода */ 
+
+.search-form__fieldset { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 5px; 
+  border: none; 
+} 
+
+.search-form__fieldset-title { 
+  font-family: 'Fira Sans Condensed', sans-serif; 
+  font-weight: 400; 
+  font-size: 18px; 
+  line-height: 100%; 
   color: #fff;
-  appearance: none;
-  padding: 0;
-}
+  padding: 0; /* ← ИЗМЕНЕНИЕ 1: сброс padding для legend */
+} 
 
-.search-form__textfield:focus {
-  outline: none;
-}
+.search-form__label { 
+  display: inline-flex; 
+  align-items: center; 
+  gap: 5px; 
+  cursor: pointer; 
+  width: fit-content; 
+} 
 
-.search-form__label:has(.search-form__textfield:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
-}
+.search-form__textfield { 
+  inline-size: 225px; 
+  min-block-size: 27px;
+  background-color: transparent; 
+  border: none; 
+  border-block-start: 1px solid #fff; 
+  border-block-end: 1px solid #fff; 
+  font-family: 'Fira Sans Condensed', sans-serif; 
+  font-weight: 400; 
+  font-size: 18px; 
+  line-height: 100%; 
+  color: #fff; 
+  appearance: none; 
+  padding: 0; 
+} 
 
-.search-form__textfield::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
+.search-form__textfield:focus { 
+  outline: none; 
+} 
 
-/* Чекбоксы */
-
-.search-form__checkbox-list {
-  display: flex;
-  gap: 15px;
-}
-
-.search-form__pseudo-checkbox {
-  display: inline-block;
-  inline-size: 19px;
-  block-size: 19px;
-  border: 1px solid #fff;
-  cursor: pointer;
-  position: relative;
-  flex-shrink: 0;
-  padding: 1px;
-}
-
-.search-form__pseudo-checkbox::after {
-  content: '';
-  display: block;
-  inline-size: 100%;
-  block-size: 100%;
-  background-color: #fff;
-  opacity: 0;
-}
-
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  opacity: 1;
-}
-
-.search-form__label:hover .search-form__label-text {
-  text-decoration: underline;
-}
-
+/* ИЗМЕНЕНИЕ 2: раздельные селекторы для focus */
+.search-form__label:has(.search-form__textfield:focus-visible),
 .search-form__label:has(.search-form__checkbox:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
-}
+  outline: 1px solid #fff; 
+  outline-offset: 1px; 
+} 
 
-/* Кнопки */
+.search-form__textfield::placeholder { 
+  color: rgba(255, 255, 255, 0.7); 
+} 
 
-.button {
-  background-color: transparent;
-  border: 1px solid #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 100%;
-  color: #fff;
-  text-align: center;
+/* Чекбоксы */ 
+
+.search-form__checkbox-list { 
+  display: flex; 
+  gap: 15px; 
+} 
+
+.search-form__pseudo-checkbox { 
+  display: inline-block; 
+  inline-size: 19px; 
+  block-size: 19px; 
+  border: 1px solid #fff; 
+  cursor: pointer; 
+  position: relative; 
+  flex-shrink: 0; 
+  padding: 1px; 
+} 
+
+.search-form__pseudo-checkbox::after { 
+  content: ''; 
+  display: block; 
+  inline-size: 100%; 
+  block-size: 100%; 
+  background-color: #fff; 
+  opacity: 0; 
+} 
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after { 
+  opacity: 1; 
+} 
+
+.search-form__label:hover .search-form__label-text { 
+  text-decoration: underline; 
+} 
+
+/* Кнопки */ 
+
+.button { 
+  background-color: transparent; 
+  border: 1px solid #fff; 
+  font-family: 'Fira Sans Condensed', sans-serif; 
+  font-weight: 700; 
+  font-size: 18px; 
+  line-height: 100%; 
+  color: #fff; 
+  text-align: center; 
   cursor: pointer;
-}
-
-.button:hover {
-  text-decoration: underline;
-}
-
-.button:active {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.button:focus {
-  outline: none;
-}
-
-.button:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
-}
-
-.search-form__submit-button {
-  inline-size: 194px;
   block-size: 34px;
-  align-self: flex-end;
-}
+} 
 
-.more-button {
-  inline-size: 100%;
-  block-size: 34px;
-}
+.button:hover { 
+  text-decoration: underline; 
+} 
 
-/* Заголовок справа */
-
-.title {
-  margin: 0;
-  padding: 0;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-size: 75px;
-  line-height: 94%;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.content__accent {
-  color: #545050;
-}
-
-/* Список карточек с прокруткой */
-
-.content__list-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.content__list {
-  inline-size: 399px;
-  block-size: 298px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding: 0;
-}
-
-.content__list-item {
-  padding: 2px;
-}
-
-/* Карточки видео */
-
-.content__card-link {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-}
-
-.content__card-link:hover {
-  text-decoration: underline;
-}
-
-.content__card-link:active {
+.button:active { 
   background-color: #545050;
-}
+} 
 
-.content__card-link:focus {
-  outline: none;
-}
+.button:focus { 
+  outline: none; 
+} 
 
-.content__card-link:focus-visible {
-  outline: 1px solid #fff;
-}
+.button:focus-visible { 
+  outline: 1px solid #fff; 
+  outline-offset: 1px; 
+} 
 
-.content__card-link_current {
-  background-color: #545050;
-}
+.search-form__submit-button { 
+  inline-size: 194px; 
+  align-self: flex-end; 
+} 
 
-.content__video-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 5px;
-  padding: 2px;
-}
+.more-button { 
+  inline-size: 100%; 
+} 
 
-.content__video-card-description-container {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
+/* Список карточек с прокруткой */ 
+
+.content__list-container { 
+  position: relative; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 30px;
+  block-size: 298px; /* ← ОСТАВИТЬ здесь */
+} 
+
+.content__list { 
+  inline-size: 399px; /* ← ОСТАВИТЬ (если макет не ломается) */
+  block-size: 100%; /* ← ИЗМЕНЕНИЕ 3: растянуть внутри контейнера */
+  overflow: auto;
+  display: flex; 
+  flex-direction: column; 
+  gap: 30px; 
+  padding: 0; 
+} 
+
+.content__list-item { 
+  padding: 2px; 
+} 
+
+/* Карточки видео */ 
+
+.content__card-link { 
+  display: block; 
+  text-decoration: none; 
+  color: #fff; 
+} 
+
+.content__card-link:hover { 
+  text-decoration: underline; 
+} 
+
+.content__card-link:active { 
+  background-color: #545050; 
+} 
+
+.content__card-link:focus { 
+  outline: none; 
+} 
+
+.content__card-link:focus-visible { 
+  outline: 1px solid #fff; 
+} 
+
+.content__card-link_current { 
+  background-color: #545050; 
+} 
+
+.content__video-card { 
+  display: flex; 
+  align-items: flex-start; 
+  gap: 5px; 
+  padding: 2px; 
+} 
+
+.content__video-card-description-container { 
+  flex-grow: 1; 
+  display: flex; 
+  flex-direction: column; 
   gap: 6px;
-}
+} 
 
-.content__video-card-title {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 100%;
-  text-transform: uppercase;
-  color: #fff;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.content__video-card-title { 
+  font-family: 'Oswald', sans-serif; 
+  font-weight: 700; 
+  font-size: 30px; 
+  line-height: 100%; 
+  text-transform: uppercase; 
+  color: #fff; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
   white-space: nowrap;
-}
+  max-inline-size: 192px; /* ← ОСТАВИТЬ (если макет не ломается) */
+} 
 
-.content__video-card-description {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 16.2px;
-  color: #fff;
-}
+.content__video-card-description { 
+  font-family: 'Fira Sans Condensed', sans-serif; 
+  font-weight: 400; 
+  font-size: 18px; 
+  line-height: 1; /* ← ИЗМЕНЕНИЕ 4: 1 вместо 0.9 */
+  color: #fff; 
+} 
 
-.content__video-card-thumbnail {
-  inline-size: 194px;
-  block-size: 103px;
-  object-fit: cover;
-  object-position: center;
-  flex-shrink: 0;
+.content__video-card-thumbnail { 
+  inline-size: 194px; 
+  block-size: 103px; 
+  object-fit: cover; 
+  object-position: center; 
+  flex-shrink: 0; 
 }
